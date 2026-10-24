@@ -1,0 +1,14 @@
+{
+  "name": "gamify",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.js",
+    "test": "node tools/stamp.js --check && node tools/playtest.js",
+    "stamp": "node tools/stamp.js",
+    "icons": "node tools/icons.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}
