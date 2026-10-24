@@ -22,14 +22,16 @@ and remember the level on the device.
 
 It is a web app: one copy works on an iPad, an Android tablet, a phone, or an Android handheld.
 
-1. Open its web address on the tablet, on Wi-Fi.
+1. Open **https://duncan-changfoot.github.io/Gamify/** on the tablet, on Wi-Fi. The capital G matters.
 2. Add it to the home screen (iPad: Share → Add to Home Screen; Android Chrome: ⋮ → Add to home screen).
    It then opens full screen, like an app.
 3. Open it once from the home screen while still on Wi-Fi. That saves every game for offline use.
 
-Offline needs the app to be served over HTTPS (for example GitHub Pages). On the home Wi-Fi you can try it
-straight away with `npm run serve` and the `http://192.168…:8080` address it prints, but that version
-won't work offline.
+Offline needs the app to be served over HTTPS, which GitHub Pages does. Every push to `main` publishes
+a new version within a minute. The tablet downloads it the next time the app is opened on Wi-Fi, and
+uses it from the time after that.
+`npm run serve` serves this computer's copy at `http://192.168…:8080` for trying changes on the home
+Wi-Fi, but that copy won't work offline.
 
 ## Before a trip
 
